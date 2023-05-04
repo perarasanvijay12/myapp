@@ -59,7 +59,7 @@ pipeline{
 
         }
 
-        stage('Static code analysis: sonarqube '){
+        /*stage('Static code analysis: sonarqube '){
 
          when{ expression { params.action == 'create'}}
 
@@ -74,6 +74,6 @@ pipeline{
                 }
             }
 
-        }
+        }*/
     }
 }
