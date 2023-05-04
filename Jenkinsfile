@@ -14,8 +14,8 @@ pipeline{
 
                     gitCheckout{
 
-                    branch: "main", 
-                    url: "https://github.com/perarasanvijay12/myapp.git"
+                        branch: "main", 
+                        url: "https://github.com/perarasanvijay12/myapp.git"
                 }
                 }
             }
