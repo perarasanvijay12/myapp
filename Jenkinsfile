@@ -75,5 +75,22 @@ pipeline{
             }
 
         }*/
+
+        stage('Quality check: sonarqube '){
+
+         when{ expression { params.action == 'create'}}
+
+            steps{
+
+                script{
+
+                    def SonarQubecredentialsId = 'sonar-credentials'
+                    qualitygate(SonarQubecredentialsId)
+                    
+                    
+                }
+            }
+
+        }
     }
 }
