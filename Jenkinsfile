@@ -30,6 +30,19 @@ pipeline{
                 script{
 
                     mvntest()
+
+                }
+            }
+
+        }
+
+        stage('Integration testing maven'){
+
+            steps{
+
+                script{
+
+                    mvnintegration()
                     
                 }
             }
