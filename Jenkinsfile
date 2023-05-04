@@ -12,11 +12,12 @@ pipeline{
 
                 script{
 
-                    gitCheckout{
+                    gitCheckout(
 
                         branch: "main", 
                         url: "https://github.com/perarasanvijay12/myapp.git"
-                }
+                
+                    )
                 }
             }
 
