@@ -59,7 +59,7 @@ pipeline{
 
         }
 
-        stage('Integration testing maven'){
+        stage('Static code analysis: sonarqube '){
 
          when{ expression { params.action == 'create'}}
 
