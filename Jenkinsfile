@@ -85,7 +85,7 @@ pipeline{
                 script{
 
                     def SonarQubecredentialsId = 'sonar-credentials'
-                    qualitygate(SonarQubecredentialsId)
+                    QualityGateStatus(SonarQubecredentialsId)
                     
                     
                 }
